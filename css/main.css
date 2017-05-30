@@ -1,16 +1,38 @@
-* {
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
   font-family: arial, sans-serif;
 }
 
 body {
+  margin: 0;
   /*michael cavs*/
   /*background: #232328;*/
   /*color: rgb(226, 224, 217);*/
 }
 
+/************************************************
+UTILITY CLASSES
+/************************************************/
+.container {
+  margin: 0 auto;
+  max-width: 1024px;
+  padding: 0 20px;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/**************************************************
+THEME LEVEL
+/**************************************************/
 .headline {
   /*michael cavs*/
   /*color: #ae7045;*/
+  padding-bottom: 10px;
 }
 
 .rule {
@@ -19,6 +41,25 @@ body {
 
   /*michael cavs*/
   /*background: #ae7045;*/
+}
+
+.section {
+  padding: 25px 0;
+}
+
+.zeetoIntro, .project-myKindaTown, .currentlyWorkingOn {
+  border-top: 5px solid #074207;
+  border-bottom: 5px solid #074207;
+  background: #616163;
+  color: rgb(253, 254, 255);
+}
+
+.section-bio,
+.zeetoTestimonials,
+.project-bankrate,
+.project-sca,
+.project-signupLogic {
+  background: #fff;
 }
 
 /*
@@ -43,3 +84,54 @@ michaelsolorio.com/casa-valle
 envato marketplace
 
 */
+
+/************************************************
+HERO
+/************************************************/
+.hero {
+  padding: 1px 0;
+  background-image: url('../images/arial-of-forest9.jpg');
+  background-size: cover;
+  color: rgb(253, 254, 255);
+}
+
+.hero_name {
+  margin: 54px auto 59px;
+  padding: 14px;
+  border: 7px solid #181a27;
+  width: 150px;
+  text-align: center;
+}
+
+.hero_nav {
+  background: #181a27;
+  color: rgb(253, 254, 255);
+}
+
+.nav_ul {
+  padding: 0;
+  height: 57px;
+  text-align: center;
+  list-style-type: none;
+  font-size: 0;
+}
+
+.nav_li {
+  font-size: 16px;
+  display: inline-block;
+  padding: 0 10px;
+  line-height: 57px;
+  height: 57px;
+  cursor: pointer;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+.nav_li:hover {
+  border-top: 7px solid #FFD700;
+  border-bottom: 7px solid #FFD700;
+  line-height: 43px;
+  /*line-height: 57px;*/
+}
+
+

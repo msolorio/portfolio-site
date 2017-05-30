@@ -10,11 +10,15 @@
 </head>
 <body>
 
-  <header class="hero">
-    <div class="headline hero_name"><h1>Michael Solorio</h1></div>
-  </header>
+  <section class="hero">
 
-  <nav class="nav">
+    <header class="hero_header clearfix">
+      <h1 class="headline hero_name">Michael Solorio</h1>
+    </header>
+
+  </section>
+
+  <nav class="hero_nav">
     <ul class="nav_ul">
       <li class="nav_li">About</li>
       <li class="nav_li">Experience</li>
@@ -23,19 +27,19 @@
     </ul>
   </nav>
 
-  <section class="bio">
-    <p class="paragraph bio">Hello! I'm a front end developer with a passion for clean code, intuitive interfaces, and an insatiable appetite for learning new things. I love the thrill of diving into a challenge, breaking it down, and creatively arriving at solutions.</p>
+  <section class="section section-bio">
+    <p class="paragraph bio container">Hello. I'm a front end developer with a passion for clean code, intuitive interfaces, and an insatiable appetite for learning new things. I love the thrill of diving into a challenge, breaking it down, and creatively arriving at solutions.</p>
   </section>
 
-  <hr class="rule"></hr>
+  <!--<hr class="rule"></hr>-->
 
   <section class="section zeetoIntro">
-    <h2 class="headline headline-experience">Experience at Zeeto</h2>
-    <p class="paragraph">At Zeeto I worked on a close knit team iterating on Agile sprints while managing multiple projects and employing a multi-tier git workflow. I authored greenfield projects as well as continuously optimized the UI, UX and revenue for 12 variations of a client registration funnel for target traffic sources. Working with a client garnering $10 million in annual revenue, I was pushed on a daily basis to think creatively and communicate effectively to meet goals.</p>
+    <h2 class="headline headline-experience container">Experience at Zeeto</h2>
+    <p class="paragraph container">At Zeeto I worked on a close knit team iterating on Agile sprints while managing multiple projects and employing a multi-tier git workflow. I authored greenfield projects as well as continuously optimized the UI, UX and revenue for 12 variations of a client registration funnel for target traffic sources. Working with a client garnering $10 million in annual revenue, I was pushed on a daily basis to think creatively and communicate effectively to meet goals.</p>
   </section>
 
   <section class="section zeetoTestimonials">
-    <h2 class="headline headline-testimonials">Testimonials</h2>
+    <h2 class="headline headline-testimonials container">Testimonials</h2>
     <blockquote>During our time on Zeeto's optimization team, Mike has been a pleasure to work with. He always came in with a positive attitude and we knew we could count on him to go the extra mile to make sure a project was given the correct attention to detail. Mike's dedication and drive to learning and taking his knowledge to the next level was always incredibly inspiring. I would highly recommend Mike for any future ventures in his development career and would happily work with him again.</blockquote>
     <cite>Brittan McGinnis, Team Lead at Zeeto.io</cite>
 
@@ -43,9 +47,9 @@
     <cite>Matt Ferguson, CTO at Zeeto.io</cite>
   </section>
 
-  <h2 class="headline headline-projects">Projects</h2>
+  <h2 class="headline headline-projects container">Projects</h2>
 
-  <section class="project project-myKindaTown">
+  <section class="project project-myKindaTown container">
     <img
       class="project_image"
       src="https://msolorio.github.io/my-kinda-town/index.html"
@@ -60,9 +64,9 @@
     </ul>
   </section>
 
-  <h2 class="headline headline-zeetoWorkExamples">Zeeto Work Examples</h2>
+  <h2 class="headline headline-zeetoWorkExamples container">Zeeto Work Examples</h2>
 
-  <section class="project project-bankrate">
+  <section class="project project-bankrate container">
     <h3 class="headline headline-project">Bankrate</h3>
     <p class="project_description">For this project I improved the UX for and rebuilt the introductory section for the Bankrate Credit Check Funnel using React and coordinated development with another team member overseeing styling. The implementation involved sending user data to the server, awaiting a valid response from the server, and displaying the call-to-action. By slowing down the speed of the loader bar I insured the server had time to verify user data and the call-to-action could immediately be displayed. By cleaning up the previous implementation of state I improved code maintainability and prevented future bugs from being introduced.</p>
     <ul class="project_technologiesUsed">
@@ -71,7 +75,7 @@
     </ul>
   </section>
 
-  <section class="project project-sca">
+  <section class="project project-sca container">
     <h3 class="headline headline-project">SCA Sweepstakes</h3>
     <p class="project_description">For this project I authored styles, markup and component architecture. I successfully implemented a theming hierarchy I created for making our funnel components iterable and iterable. Implementation of this architecture sped further initiatives and split testing by 3x.</p>
     <ul class="project_technologiesUsed">
@@ -80,26 +84,26 @@
     </ul>
   </section>
 
-  <section class="project signupLogic">
+  <section class="project project-signupLogic container">
     <h3 class="headline headline-project">Implement Signup Logic</h3>
     <a href="http://g.getitfree.us/getFreebiesSignup?uf=duocleansers"></a>
     <a href="http://g.getitfree.us/sites/default/files/js/js_yx-hfV0GpifdJYx0CxkJ5OXnfP3rrPF1IFhH0RGbbD4.js" target="_blank">JavaScript, search for initializeFormStepLogic()</a>
     <p>During a migration of one of our funnels from a React implementation to a CMS implementation, I was in charge of migrating the sign up page logic. The implementation from React to vanilla JavaScript needed to be flexible enough to account for the wide range of tracking and user data storing needed for the various Getitfree funnels and simple enough for various members of the team to make changes when needed.</p>
   </section>
 
-  <section class="currentlyWorkingOn">
-    <h2 class="headline headline-currentlyWorkingOn">Currently Working On</h2>
-    <p>I am currently building a modern web app with the Express framework, using Express Router, models, and ES6 modules to modularize and simplify my codebase.</p>
+  <section class="section currentlyWorkingOn">
+    <h2 class="headline headline-currentlyWorkingOn container">Currently Working On</h2>
+    <p class="container">I am currently building a modern web app with the Express framework, using Express Router, models, and ES6 modules to modularize and simplify my codebase.</p>
   </section>
 
   <section class="whyILoveWeb">
-    <h2 class="headline headline-whyILoveWeb">Why I Love the Web</h2>
-    <p>In 2017 The web has woven itself into the fabric of the modern world and has almost incalculable cultural, educational, and economic value. It's a place where anyone can publish content, access a global network over a standard protocol and share their content with literally anyone else in the world. It is the ultimate democratizing medium. It has overthrown dictatorships and disrupted the status quo in countless ways. The best part is I can't help but think it's just getting started.</p>
+    <h2 class="headline headline-whyILoveWeb container">Why I Love the Web</h2>
+    <p class="container">In 2017 The web has woven itself into the fabric of the modern world and has almost incalculable cultural, educational, and economic value. It's a place where anyone can publish content, access a global network over a standard protocol and share their content with literally anyone else in the world. It is the ultimate democratizing medium. It has overthrown dictatorships and disrupted the status quo in countless ways. The best part is I can't help but think it's just getting started.</p>
   </section>
 
   <section class="contact">
-    <h2 class="headline headline-content">Contact</h2>
-    <ul class="contact_ul">
+    <h2 class="headline headline-content container">Contact</h2>
+    <ul class="contact_ul container">
       <li class="contact_li"><a href=""><img src="" alt="email" /></a></li>
       <li class="contact_li"><a href=""><img src="" alt="resume" /></a></li>
       <li class="contact_li"><a href=""><img src="" alt="linkedIn" /></a></li>

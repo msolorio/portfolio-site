@@ -1,15 +1,32 @@
+/*@font-face {
+  font-family: Circle;
+  src: url(../fonts/circle.woff) format("woff")
+}*/
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/OpenSans-Light.ttf');
+}
+
 *,
 *:before,
 *:after {
   box-sizing: border-box;
-  font-family: arial, sans-serif;
 }
 
 body {
   margin: 0;
+  /*font-family: Circle, arial, sans-serif;*/
+  font-family: 'Open Sans', arial, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.08em;
   /*michael cavs*/
   /*background: #232328;*/
   /*color: rgb(226, 224, 217);*/
+}
+
+.blockquote {
+  margin: 0;
 }
 
 /************************************************
@@ -19,6 +36,12 @@ UTILITY CLASSES
   margin: 0 auto;
   max-width: 1024px;
   padding: 0 20px;
+}
+
+.container-header {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1500px;
 }
 
 .clearfix:after {
@@ -44,22 +67,26 @@ THEME LEVEL
 }
 
 .section {
-  padding: 25px 0;
+  padding: 15px 0;
 }
 
 .zeetoIntro, .project-myKindaTown, .currentlyWorkingOn {
-  border-top: 5px solid #074207;
-  border-bottom: 5px solid #074207;
-  background: #616163;
-  color: rgb(253, 254, 255);
+  /**/
 }
 
 .section-bio,
 .zeetoTestimonials,
 .project-bankrate,
-.project-sca,
-.project-signupLogic {
-  background: #fff;
+/*.project-sca,*/
+.project-signupLogic,
+.whyILoveWeb {
+  /*background: #fff;*/
+  background: #48484a;
+  color: #fff;
+}
+
+.textHighlight {
+  color: rgb(255, 134, 83);
 }
 
 /*
@@ -88,50 +115,152 @@ envato marketplace
 /************************************************
 HERO
 /************************************************/
+
 .hero {
-  padding: 1px 0;
-  background-image: url('../images/arial-of-forest9.jpg');
+  /*background-image: url('../images/building-pattern-br5.jpg');*/
+  padding: 7px 0 30px;
+  background: #232328;
+  /*background: #fff;*/
   background-size: cover;
-  color: rgb(253, 254, 255);
+  /*padding: 27px 20px 27px;*/
+  color: #fff;
+  /*text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.82);*/
+  /*text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.82), 0px 0px 35px rgba(0, 0, 0, 0.42);*/
+}
+
+.hero_header {
+  /*text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.82), 0px 0px 35px rgba(0, 0, 0, 0.19);*/
 }
 
 .hero_name {
-  margin: 54px auto 59px;
-  padding: 14px;
-  border: 7px solid #181a27;
-  width: 150px;
-  text-align: center;
+  margin: 0;
+  padding: 10px 0 20px;
+  font-size: 19px;
+  font-weight: 300;
 }
 
 .hero_nav {
-  background: #181a27;
-  color: rgb(253, 254, 255);
+  display: none;
 }
 
 .nav_ul {
   padding: 0;
-  height: 57px;
   text-align: center;
   list-style-type: none;
   font-size: 0;
 }
 
 .nav_li {
-  font-size: 16px;
+  height: 54px;
+  line-height: 54px;
+  font-size: 14px;
   display: inline-block;
   padding: 0 10px;
-  line-height: 57px;
-  height: 57px;
   cursor: pointer;
-  -webkit-transition: all 250ms ease-in-out;
-  transition: all 250ms ease-in-out;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+
 }
 
 .nav_li:hover {
-  border-top: 7px solid #FFD700;
-  border-bottom: 7px solid #FFD700;
-  line-height: 43px;
-  /*line-height: 57px;*/
+  color: rgb(255, 142, 94);
+  text-shadow: none;
 }
 
+.nav_a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.hero_bio {
+  margin: 0px;
+  font-size: 19px;
+}
+
+/********************************************************************
+TESTIMONIAL
+/********************************************************************/
+.testimonialCite {
+  display: block;
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+  .container-header {
+    padding: 0 25px;
+  }
+
+  .hero {
+    padding: 0;
+    background-image: url('../images/building-pattern-br5.jpg');
+    height: 446px;
+  }
+
+  .hero_name {
+    margin: 0;
+    padding: 14px 0;
+    float: left;
+    font-size: 22px;
+  }
+
+  .hero_nav {
+    padding: 0;
+    display: block;
+    float: right;
+  }
+
+  .nav_li {
+    height: 59px;
+    line-height: 59px;
+    font-size: 14px;
+    display: inline-block;
+    padding: 0 25px;
+    cursor: pointer;
+    -webkit-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+  }
+
+  .nav_li:hover {
+    color: rgb(255, 142, 94);
+    text-shadow: none;
+  }
+
+  .hero_header {
+    /*padding: 0;*/
+    background: rgba(0, 0, 0, 0.6);
+    background: rgba(17, 17, 17, 0.7);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.82), 0px 0px 35px rgba(0, 0, 0, 0.19);
+    /*box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.82);*/
+  }
+
+  .hero_bio {
+    background: rgba(0, 0, 0, 0.8);
+    background: rgba(17, 17, 17, 0.7);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.82), 0px 0px 35px rgba(0, 0, 0, 0.42);
+    /*box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.82);*/
+    padding: 14px 23px 23px;
+    margin: 78px 0 0;
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+  .hero {
+    width: 100%;
+    height: 100vh;
+    /*height: 900px;*/
+  }
+
+  .hero_bio {
+    margin: 38vh 0 0;
+  }
+}
 

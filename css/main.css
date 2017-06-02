@@ -89,6 +89,8 @@ THEME LEVEL
   /*background: rgba(245, 243, 241, 1);*/
   background: rgb(250, 250, 250);
   color: #232328;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
 }
 
 .section-bio,
@@ -100,6 +102,8 @@ THEME LEVEL
   /*background: #dedee0;*/
   background: #d5d5d7;
   color: #fff;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
 
 .zeetoTestimonials {
@@ -170,7 +174,11 @@ TESTIMONIAL
 
 .zeetoTestimonials_cite {
   display: block;
-  margin: 0 0 15px;
+  margin: 0 0 15px 20px;
+}
+
+.zeetoTestimonials_iconContainer {
+  display: none;
 }
 
 /******************************************************************
@@ -186,7 +194,16 @@ PROJECTS
 .headline-projects {
   text-align: center;
   font-size: 32px;
-  margin: 16px 0;
+  padding: 16px 0;
+  margin: 0;
+}
+
+/****************************************************************
+CONTACT
+/****************************************************************/
+.contact_headline {
+  text-align: center;
+  font-size: 32px;
 }
 
 /****************************************************************
@@ -255,7 +272,7 @@ MEDIA QUERIES
   .hero {
     padding: 0;
     background-image: url('../images/building-pattern-br6.jpg');
-    background-position: 0 -46px;
+    background-position: 0 -74px;
     height: 560px;
   }
 
@@ -371,12 +388,12 @@ MEDIA QUERIES
   TESTIMONIALS
   /****************************************************/
   .zeetoTestimonials {
-    position: relative;
+    /*position: relative;*/
   }
 
   .zeetoTestimonials_quote {
-    /*position: relative;
-    z-index: 1;*/
+    position: relative;
+    z-index: 1;
     padding: 15px 20px;
     background: #fff;
     color: #232328;
@@ -384,9 +401,25 @@ MEDIA QUERIES
     /*border: 1px solid rgba(0, 0, 0, 0.34);*/
   }
 
+  .zeetoTestimonials_openQuoteMarks {
+    position: relative;
+    top: 2px;
+    font-size: 38px;
+    line-height: 25px;
+    margin-right: 17px;
+  }
+
+  /*.zeetoTestimonials_closeQuoteMarks {
+    /* position: absolute; */
+    /* right: 0; */
+    /*font-size: 38px;*/
+    /* bottom: 41px; */
+    /* right: 23px; */
+  /*}*/
+
   .zeetoTestimonials_backShape {
     display: inline-block;
-    width: 80%;
+    width: 70%;
     padding: 15px;
     margin: 0 0 30px;
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.65);
@@ -394,8 +427,12 @@ MEDIA QUERIES
   }
 
   .zeetoTestimonials_backShape1 {
-    /*float: left;*/
-    background: #ff5500;
+    float: left;
+    background: #ff4f1a;
+    /*background: -webkit-linear-gradient(#ff4f1a, #ff5d0a);
+    background: -moz-linear-gradient(#ff4f1a, #ff5d0a);
+    background: -o-linear-gradient(#ff4f1a, #ff5d0a);
+    background: linear-gradient(#ff4f1a, #ff5d0a);*/
     margin: 0 84px 76px 0;
   }
 
@@ -405,7 +442,7 @@ MEDIA QUERIES
     background: #686878
   }
 
-  /*.zeetoTestimonials_iconContainer {
+  .zeetoTestimonials_iconContainer {
     display: inline-block;
     width: 20%;
     margin: 107px 0 0;
@@ -424,6 +461,6 @@ MEDIA QUERIES
     position: relative;
     top: 10px;
     width: 100%;
-  }*/
+  }
 
 }

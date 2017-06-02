@@ -60,19 +60,6 @@ THEME LEVEL
   background: rgba(255, 76, 0, 0.53);
 }
 
-.headline {
-  padding-bottom: 10px;
-  text-shadow: 1.5px 3px 0px rgba(0, 0, 0, 0.18);
-  /*font-family: 'OpenSansRegular';*/
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: 400;
-  font-size: 26px;
-}
-
-.zeetoTestimonials_headline {
-  text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.67);
-}
-
 .paragraph {
   font-size: 18px;
   text-shadow: .5px 1px 1px rgba(0, 0, 0, 0.28);
@@ -82,32 +69,41 @@ THEME LEVEL
   padding: 15px 0;
 }
 
-.zeetoIntro,
+.section-headline {
+  padding: 16px 0;
+  margin: 0;
+}
+
+.headline {
+  padding-bottom: 10px;
+  text-shadow: 1.5px 3px 0px rgba(0, 0, 0, 0.18);
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+}
+
+.headline-featured {
+  text-align: center;
+  font-size: 32px;
+  color: #232328;
+}
+
+.experience,
 .myKindaTown,
 .currentlyWorkingOn {
-  /*background: #fff;*/
-  /*background: rgba(245, 243, 241, 1);*/
   background: rgb(250, 250, 250);
   color: #232328;
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
 }
 
-.section-bio,
-.zeetoTestimonials,
-.bankrate,
-.signupLogic,
+.testimonials,
+.workExamples,
 .whyILoveWeb {
-  /*background: #c2c2c5;*/
-  /*background: #dedee0;*/
-  background: #d5d5d7;
-  color: #fff;
+  background: #e2e2e6;
+  color: #232328;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
-}
-
-.zeetoTestimonials {
-  background: ;
 }
 
 .textHighlight {
@@ -118,7 +114,6 @@ THEME LEVEL
 HERO
 /************************************************/
 .hero {
-  /*padding: 7px 0 30px;*/
   background: #232328;
   background-image: url('../images/building-pattern-br6.jpg');
   background-size: cover;
@@ -168,16 +163,17 @@ HERO
 /********************************************************************
 TESTIMONIAL
 /********************************************************************/
-.teetoTestimonails_blockquote {
+
+.testimonials_blockquote {
   margin: 0 0 10px;
 }
 
-.zeetoTestimonials_cite {
+.testimonials_cite {
   display: block;
   margin: 0 0 15px 20px;
 }
 
-.zeetoTestimonials_iconContainer {
+.testimonials_iconContainer {
   display: none;
 }
 
@@ -189,13 +185,6 @@ PROJECTS
   /*background: url('../images/bg-proj.svg');*/
   /*background: url('../images/circuit-board.svg');*/
   
-}
-
-.headline-projects {
-  text-align: center;
-  font-size: 32px;
-  padding: 16px 0;
-  margin: 0;
 }
 
 /****************************************************************
@@ -387,11 +376,11 @@ MEDIA QUERIES
   /****************************************************
   TESTIMONIALS
   /****************************************************/
-  .zeetoTestimonials {
+  .testimonials {
     /*position: relative;*/
   }
 
-  .zeetoTestimonials_quote {
+  .testimonials_quote {
     position: relative;
     z-index: 1;
     padding: 15px 20px;
@@ -401,7 +390,7 @@ MEDIA QUERIES
     /*border: 1px solid rgba(0, 0, 0, 0.34);*/
   }
 
-  .zeetoTestimonials_openQuoteMarks {
+  .testimonials_openQuoteMarks {
     position: relative;
     top: 2px;
     font-size: 38px;
@@ -409,7 +398,7 @@ MEDIA QUERIES
     margin-right: 17px;
   }
 
-  /*.zeetoTestimonials_closeQuoteMarks {
+  /*.testimonials_closeQuoteMarks {
     /* position: absolute; */
     /* right: 0; */
     /*font-size: 38px;*/
@@ -417,7 +406,7 @@ MEDIA QUERIES
     /* right: 23px; */
   /*}*/
 
-  .zeetoTestimonials_backShape {
+  .testimonials_backShape {
     display: inline-block;
     width: 70%;
     padding: 15px;
@@ -426,7 +415,7 @@ MEDIA QUERIES
     border: 1px solid rgba(0, 0, 0, 0.1);
   }
 
-  .zeetoTestimonials_backShape1 {
+  .testimonials_backShape1 {
     float: left;
     background: #ff4f1a;
     /*background: -webkit-linear-gradient(#ff4f1a, #ff5d0a);
@@ -436,13 +425,13 @@ MEDIA QUERIES
     margin: 0 84px 76px 0;
   }
 
-  .zeetoTestimonials_backShape2 {
+  .testimonials_backShape2 {
     float: right;
     /*background: #ffab0f;*/
     background: #686878
   }
 
-  .zeetoTestimonials_iconContainer {
+  .testimonials_iconContainer {
     display: inline-block;
     width: 20%;
     margin: 107px 0 0;
@@ -453,11 +442,11 @@ MEDIA QUERIES
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.65);
   }
 
-  .zeetoTestimonials_iconContainer2 {
+  .testimonials_iconContainer2 {
     margin-right: 84px;
   }
 
-  .zeetoTestimonials_icon {
+  .testimonials_icon {
     position: relative;
     top: 10px;
     width: 100%;

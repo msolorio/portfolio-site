@@ -8,6 +8,8 @@
   src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
 }
 
+
+
 *,
 *:before,
 *:after {
@@ -16,36 +18,31 @@
 
 body {
   margin: 0;
+  min-width: 320px;
   font-family: 'OpenSansLight', arial, sans-serif;
+  /*font-family: 'OpenSansRegular', arial, sans-serif;*/
+  /*font-family: 'Ubuntu', sans-serif;*/
+  font-weight: 300;
+
   letter-spacing: 0.09em;
-}
-
-::-moz-selection {
-  background: rgba(255, 76, 0, 0.53);
-}
-
-::selection {
-  background: rgba(255, 76, 0, 0.53);
 }
 
 .blockquote {
   margin: 0;
 }
 
-/************************************************
-UTILITY CLASSES
-/************************************************/
 .container {
   margin: 0 auto;
   padding: 0 20px;
 }
 
-.container-header {
-  margin: 0 auto;
-  padding: 0 20px;
-  max-width: 1500px;
+.section {
+  display: block;
 }
 
+/************************************************
+UTILITY CLASSES
+/************************************************/
 .clearfix:after {
   content: "";
   display: table;
@@ -55,15 +52,30 @@ UTILITY CLASSES
 /**************************************************
 THEME LEVEL
 /**************************************************/
+::-moz-selection {
+  background: rgba(255, 76, 0, 0.53);
+}
+
+::selection {
+  background: rgba(255, 76, 0, 0.53);
+}
+
 .headline {
   padding-bottom: 10px;
   text-shadow: 1.5px 3px 0px rgba(0, 0, 0, 0.18);
-  font-family: 'OpenSansRegular';
+  /*font-family: 'OpenSansRegular';*/
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-size: 26px;
 }
 
-.rule {
-  border: none;
-  height: 3px;
+.zeetoTestimonials_headline {
+  text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.67);
+}
+
+.paragraph {
+  font-size: 18px;
+  text-shadow: .5px 1px 1px rgba(0, 0, 0, 0.28);
 }
 
 .section {
@@ -73,7 +85,9 @@ THEME LEVEL
 .zeetoIntro,
 .myKindaTown,
 .currentlyWorkingOn {
-  background: #fff;
+  /*background: #fff;*/
+  /*background: rgba(245, 243, 241, 1);*/
+  background: rgb(250, 250, 250);
   color: #232328;
 }
 
@@ -82,8 +96,14 @@ THEME LEVEL
 .bankrate,
 .signupLogic,
 .whyILoveWeb {
-  background: #a1a1a5;
+  /*background: #c2c2c5;*/
+  /*background: #dedee0;*/
+  background: #d5d5d7;
   color: #fff;
+}
+
+.zeetoTestimonials {
+  background: ;
 }
 
 .textHighlight {
@@ -94,10 +114,22 @@ THEME LEVEL
 HERO
 /************************************************/
 .hero {
-  padding: 7px 0 30px;
+  /*padding: 7px 0 30px;*/
   background: #232328;
+  background-image: url('../images/building-pattern-br6.jpg');
   background-size: cover;
   color: #fff;
+}
+
+.hero_opaqueOnMobile {
+  padding: 8px 0 23px;
+  background: rgba(17, 17, 17, 0.8);
+}
+
+.container-header {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1500px;
 }
 
 .hero_name {
@@ -105,9 +137,15 @@ HERO
   padding: 10px 0 20px;
   font-size: 19px;
   font-family: 'OpenSansLight';
+  /*font-family: 'Ubuntu', sans-serif;*/
   /* must restate letter spacing here
   now that font-family must be redeclared */
   letter-spacing: 0.09em;
+}
+
+.hero_nameA {
+  color: inherit;
+  text-decoration: none;
 }
 
 .hero_nav {
@@ -126,8 +164,29 @@ HERO
 /********************************************************************
 TESTIMONIAL
 /********************************************************************/
-.testimonialCite {
+.teetoTestimonails_blockquote {
+  margin: 0 0 10px;
+}
+
+.zeetoTestimonials_cite {
   display: block;
+  margin: 0 0 15px;
+}
+
+/******************************************************************
+PROJECTS
+/*****************************************************************/
+.section-projectsHeadline {
+  /*color: #232328;*/
+  /*background: url('../images/bg-proj.svg');*/
+  /*background: url('../images/circuit-board.svg');*/
+  
+}
+
+.headline-projects {
+  text-align: center;
+  font-size: 32px;
+  margin: 16px 0;
 }
 
 /****************************************************************
@@ -178,6 +237,13 @@ MEDIA QUERIES
 }
 
 @media (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+
+  .paragraph {
+    font-size: 20px;
+  }
 
   /******************************************************************
   HERO
@@ -189,14 +255,26 @@ MEDIA QUERIES
   .hero {
     padding: 0;
     background-image: url('../images/building-pattern-br6.jpg');
+    background-position: 0 -46px;
     height: 560px;
+  }
+
+  .hero_opaqueOnMobile {
+    padding: 0;
+    background: none;
   }
 
   .hero_name {
     margin: 0;
-    padding: 10px 0 7px;
+    padding: 0;
     float: left;
-    font-size: 22px;
+    font-size: 23px;
+  }
+
+  .hero_nameA {
+    display: block;
+    height: 51px;
+    line-height: 51px;
   }
 
   .hero_nav {
@@ -210,20 +288,25 @@ MEDIA QUERIES
   }
 
   .hero_navLi {
-    cursor: pointer;
     font-size: 14px;
     display: inline-block;
+  }
+
+  .hero_nameA,
+  .hero_navLi {
     cursor: pointer;
     -webkit-transition: all 200ms ease-in-out;
     transition: all 200ms ease-in-out;
   }
 
+  .hero_nameA:hover,
   .hero_navLi:hover {
-    color: rgb(255, 142, 94);
-    text-shadow: none;
+    color: rgb(255, 134, 83);
+    text-shadow: 1px 2px 1px rgba(0, 0, 0, .6), 0px 0px 35px rgba(0, 0, 0, 0.19);
   }
 
   .hero_navA {
+    display: block;
     height: 51px;
     line-height: 48px;
     padding: 0 25px;
@@ -235,7 +318,7 @@ MEDIA QUERIES
     background: rgba(0, 0, 0, 0.6);
     background: rgba(17, 17, 17, 0.5);
     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.82), 0px 0px 35px rgba(0, 0, 0, 0.19);
+    text-shadow: 1px 2px 1px rgba(0, 0, 0, 1), 0px 0px 35px rgba(0, 0, 0, 0.19);
   }
 
   .container-bio {
@@ -243,10 +326,10 @@ MEDIA QUERIES
   }
 
   .hero_bio {
-    padding: 14px 23px 23px;
+    padding: 12px 21px 20px;
     margin: 144px auto 0;
     max-width: 1024px;
-    font-size: 24px;
+    font-size: 22px;
     background: rgba(0, 0, 0, 0.8);
     background: rgba(17, 17, 17, 0.7);
     border: 1px solid rgba(0, 0, 0, 0.08);
@@ -255,19 +338,92 @@ MEDIA QUERIES
 }
 
 @media (min-width: 992px) {
+  .container {
+    width: 960px;
+  }
+
   .hero_bio {
     font-size: 26px;
   }
 }
 
 @media (min-width: 1200px) {
+  .container {
+    /*width: 1140px;*/
+    width: 1024px;
+  }
+
+  .paragraph {
+    font-size: 22px;
+  }
+
   .hero {
     width: 100%;
     height: 100vh;
   }
 
   .hero_bio {
-    margin-top: 38vh;
+    margin: 37vh auto 0;
     font-size: 28px;
   }
+
+  /****************************************************
+  TESTIMONIALS
+  /****************************************************/
+  .zeetoTestimonials {
+    position: relative;
+  }
+
+  .zeetoTestimonials_quote {
+    /*position: relative;
+    z-index: 1;*/
+    padding: 15px 20px;
+    background: #fff;
+    color: #232328;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.42);
+    /*border: 1px solid rgba(0, 0, 0, 0.34);*/
+  }
+
+  .zeetoTestimonials_backShape {
+    display: inline-block;
+    width: 80%;
+    padding: 15px;
+    margin: 0 0 30px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.65);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .zeetoTestimonials_backShape1 {
+    /*float: left;*/
+    background: #ff5500;
+    margin: 0 84px 76px 0;
+  }
+
+  .zeetoTestimonials_backShape2 {
+    float: right;
+    /*background: #ffab0f;*/
+    background: #686878
+  }
+
+  /*.zeetoTestimonials_iconContainer {
+    display: inline-block;
+    width: 20%;
+    margin: 107px 0 0;
+    background: #fff;
+    padding: 29px;
+    vertical-align: top;
+    border-radius: 142px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.65);
+  }
+
+  .zeetoTestimonials_iconContainer2 {
+    margin-right: 84px;
+  }
+
+  .zeetoTestimonials_icon {
+    position: relative;
+    top: 10px;
+    width: 100%;
+  }*/
+
 }

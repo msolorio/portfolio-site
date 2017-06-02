@@ -7,53 +7,75 @@
   <title>Michael Solorio</title>
   <link href="css/main.css" rel="stylesheet" title="main">
   <link href="css/normalize.css" rel="stylesheet" title="normalize">
-  <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">-->
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400" rel="stylesheet">
 </head>
 <body>
 
-  <section class="hero" id="about">
-    <header class="hero_header clearfix">
-      <div class="container-header">
-        <h1 class="headline hero_name">Michael Solorio</h1>
-        
-        <ul class="hero_nav">
-          <li class="hero_navLi"><a class="hero_navA" href="#about">About</a></li>
-          <li class="hero_navLi"><a class="hero_navA" href="">Experience</a></li>
-          <li class="hero_navLi"><a class="hero_navA" href="">Projects</a></li>
-          <li class="hero_navLi"><a class="hero_navA" href="">Contact</a></li>
-        </ul>
-      </div>
-    </header>
+  <section class="hero" id="home">
+    <div class="hero_opaqueOnMobile">
+      <header class="hero_header clearfix">
+        <div class="container-header">
+          <h1 class="hero_name"><a class="hero_nameA" href="#home">Michael Solorio</a></h1>
+          
+          <ul class="hero_nav">
+            <!--<li class="hero_navLi"><a class="hero_navA" href="#about">About</a></li>-->
+            <li class="hero_navLi"><a class="hero_navA" href="#experience">Experience</a></li>
+            <li class="hero_navLi"><a class="hero_navA" href="#projects">Projects</a></li>
+            <li class="hero_navLi"><a class="hero_navA" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </header>
 
-    <div class="container-bio">
-      <p class="hero_bio"><span class="textHighlight">Hello.</span> I&apos;m a front end developer with a passion for clean code, intuitive interfaces, and an insatiable appetite for learning new things. I love the thrill of diving into challenges, breaking them down, and creatively arriving at solutions.</p>
+      <div class="container-bio">
+        <p class="hero_bio"><span class="textHighlight">Hello.</span> I&apos;m a front end developer with a passion for clean code, intuitive interfaces, and an insatiable appetite for learning new things. I love the thrill of diving into challenges, breaking them down, and creatively arriving at solutions.</p>
+      </div>
     </div>
   </section>
 
-  <section class="section zeetoIntro">
+  <section class="section zeetoIntro" id="experience">
     <div class="container">
-      <h2 class="headline zeetoIntro_headline">Experience at Zeeto</h2>
-      <p class="paragraph">At Zeeto I worked on a close knit team iterating on Agile sprints while managing multiple projects and employing a multi-tier git workflow. I authored greenfield projects as well as continuously optimized the UI, UX and revenue for 12 variations of a client registration funnel for target traffic sources. Working with a client garnering $10 million in annual revenue, I was pushed on a daily basis to think creatively and communicate effectively to meet goals.</p>
+      <h2 class="headline zeetoIntro_headline">Experience</h2>
+      <p class="paragraph">At Zeeto I worked on a close knit team iterating on Agile sprints, managing multiple projects, and employing a multi-tier git workflow. I authored greenfield projects as well as continuously optimized the UI, UX and revenue for 12 variations of a client registration funnel for target traffic sources. Working with a client garnering $10 million in annual revenue, I was pushed on a daily basis to think creatively and communicate effectively.</p>
     </div>
   </section>
 
   <!--trophy / medal icon-->
-  <section class="section zeetoTestimonials">
+  <section class="section zeetoTestimonials clearfix">
     <div class="container">
       <h2 class="headline zeetoTestimonials_headline">Testimonials</h2>
-      <blockquote class="teetoTestimonails_blockquote">During our time on Zeeto's optimization team, Mike has been a pleasure to work with. He always came in with a positive attitude and we knew we could count on him to go the extra mile to make sure a project was given the correct attention to detail. Mike's dedication and drive to learning and taking his knowledge to the next level was always incredibly inspiring. I would highly recommend Mike for any future ventures in his development career and would happily work with him again.
-        <cite class="zeetoTestimonials_cite">- Brittan McGinnis, Team Lead at Zeeto.io</cite>
-      </blockquote>
 
-      <blockquote class="teetoTestimonails_blockquote">Michael, is a very detail oriented developer excited about growing his skills and giving everything he has to his passion. It was a pleasure everyday to work with Michael who was always even keeled and thoughtful. Even though Michael has chosen to look for new challenges beyond Zeeto at this time I fully support Michaels decision and respect his need to keep growing as a developer and look outside of Zeeto for that opportunity.
-        <cite class="zeetoTestimonials_cite">- Matt Ferguson, CTO at Zeeto.io</cite>
-      </blockquote>
+        <div class="row clearfix">
+          <div class="zeetoTestimonials_backShape zeetoTestimonials_backShape1">
+            <div class="zeetoTestimonials_quote">
+              <blockquote class="paragraph teetoTestimonails_blockquote">During our time on Zeeto's optimization team, Mike has been a pleasure to work with. He always came in with a positive attitude and we knew we could count on him to go the extra mile to make sure a project was given the correct attention to detail. Mike's dedication and drive to learning and taking his knowledge to the next level was always incredibly inspiring. I would highly recommend Mike for any future ventures in his development career and would happily work with him again.</blockquote>
+              <cite class="paragraph zeetoTestimonials_cite">- Brittan McGinnis, Team Lead at Zeeto.io</cite>
+            </div>
+          </div>
+
+          <!--<div class="zeetoTestimonials_iconContainer zeetoTestimonials_iconContainer1">
+            <img class="zeetoTestimonials_icon" src="./images/winged-shield.svg" alt="winged-shield">
+          </div>-->
+        </div>
+
+        <div class="row clearfix">
+          <!--<div class="zeetoTestimonials_iconContainer zeetoTestimonials_iconContainer2">
+            <img class="zeetoTestimonials_icon" src="./images/medal.svg" alt="winged-shield">
+          </div>-->
+
+          <div class="zeetoTestimonials_backShape zeetoTestimonials_backShape2">
+            <div class="zeetoTestimonials_quote">
+              <blockquote class="paragraph teetoTestimonails_blockquote">Michael, is a very detail oriented developer excited about growing his skills and giving everything he has to his passion. It was a pleasure everyday to work with Michael who was always even keeled and thoughtful. Even though Michael has chosen to look for new challenges beyond Zeeto at this time I fully support Michael's decision and respect his need to keep growing as a developer and look outside of Zeeto for that opportunity.</blockquote>
+              <cite class="paragraph zeetoTestimonials_cite">- Matt Ferguson, CTO at Zeeto.io</cite>
+            </div>
+          </div>
+        </div>
+
     </div>
   </section>
 
-  <seciton class="section section-headline">
+  <seciton class="section section-headline section-projectsHeadline">
     <div class="container">
-      <h2 class="headline headline-projects">Projects</h2>
+      <h2 class="headline headline-projects" id="projects">Projects</h2>
     </div>
   </seciton>
 
@@ -64,7 +86,7 @@
         src="https://msolorio.github.io/my-kinda-town/index.html"
         alt="">
       <h2 class="headline project_headline">My Kinda Town</h2>
-      <p class="project_description">This is a responsive web app designed to help prospective transplants make their next move by providing information about majoy cities around the world. Enter a second city and compare your favorite cities side by side.</p>
+      <p class="paragraph project_description">This responsive web was created to help prospective transplants make their next move by providing information about majoy cities around the world. Enter a second city and compare your favorite cities side by side.</p>
       <ul class="project_technologiesUsed">
         <li class="project_technology">Vanilla JavaScript</li>
         <li class="project_technology">jQuery</li>
@@ -83,7 +105,7 @@
   <section class="section bankrate">
     <div class="container">
       <h3 class="headline headline-project">Bankrate</h3>
-      <p class="project_description">For this project I improved the UX for and rebuilt the introductory section for the Bankrate Credit Check Funnel using React and closely coordinated work with another teammember overseeing styling. The implementation involved sending user data to the server, awaiting a valid response, and displaying the call-to-action. By slowing the speed of the loader I insured the server had time to verify user data and the call-to-action could immediately be displayed. By cleaning up the previous implementation of state I improved code maintainability and prevented future bugs.</p>
+      <p class="paragraph project_description">For this project I improved the UX for and rebuilt the introductory section for the Bankrate Credit Check Funnel using React and closely coordinated work with another teammember overseeing styling. The implementation involved sending user data to the server, awaiting a valid response, and displaying the call-to-action. By slowing the speed of the loader I insured the server had time to verify user data and the call-to-action could immediately be displayed. By cleaning up the previous implementation of state I improved code maintainability and prevented future bugs.</p>
       <ul class="project_technologiesUsed">
         <li class="project_technology">React</li>
         <li class="project_technology">JavaScript</li>
@@ -94,7 +116,7 @@
   <section class="section scaProject">
     <div class="container">
       <h3 class="headline headline-project">SCA Sweepstakes</h3>
-      <p class="project_description">For this project I implemented a theming hierarchy I created for making our components reusable and our registration funnels quickly themable. Implementation of this architecture sped further initiatives and split testing by 3x.</p>
+      <p class="paragraph project_description">For this project I implemented a theming hierarchy I created for making our components reusable and our registration funnels quickly themable. Implementation of this architecture sped further initiatives and split testing by 3x.</p>
       <ul class="project_technologiesUsed">
         <li class="project_technology">CSS</li>
         <li class="project_technology">Less Preprocessing</li>
@@ -107,7 +129,7 @@
       <h3 class="headline headline-project">Implement Signup Logic</h3>
       <a href="http://g.getitfree.us/getFreebiesSignup?uf=duocleansers"></a>
       <a href="http://g.getitfree.us/sites/default/files/js/js_yx-hfV0GpifdJYx0CxkJ5OXnfP3rrPF1IFhH0RGbbD4.js" target="_blank">JavaScript, search for initializeFormStepLogic()</a>
-      <p>During the migration of a funnel from React to a CMS implementation, I was in charge of migrating the sign up page logic. The implementation from React to vanilla JavaScript needed to be flexible enough to account for the wide range of tracking and user data storing needed for the various Getitfree funnels and simple enough for various members of the team to make changes when needed.</p>
+      <p class="paragraph project_description">During the migration of a funnel from React to a CMS implementation, I was in charge of migrating the sign up page logic. The implementation from React to vanilla JavaScript needed to be flexible enough to account for the wide range of tracking and user data storing needed for the various Getitfree funnels and simple enough for various members of the team to make changes when needed.</p>
       <ul class="project_technologiesUsed">
         <li class="project_technology">Vanilla JavaScript</li>
         <li class="project_technology">jQuery</li>
@@ -118,20 +140,20 @@
   <section class="section currentlyWorkingOn">
     <div class="container">
       <h2 class="headline currentlyWorkingOn_headline">Currently Working On</h2>
-      <p class="currentlyWorkingOn_text">I am currently building a modern web app with the Express framework, using Express Router, models, and ES6 modules to modularize and simplify my codebase.</p>
+      <p class="paragraph currentlyWorkingOn_text">I am currently building a modern web app with the Express framework, using Express Router, models, and ES6 modules to modularize and simplify my codebase.</p>
     </div>
   </section>
 
   <section class="section whyILoveWeb">
     <div class="container">
       <h2 class="headline whyILoveWeb_headline">Why I Love the Web</h2>
-      <p class="whyILoveTheWeb_text">In 2017 The web has woven itself into the fabric of the modern world and has almost incalculable cultural, educational, and economic value. It's a place where anyone can publish content, access a global network over a standard protocol and share their content with literally anyone else in the world. It is the ultimate democratizing medium. It has overthrown dictatorships and disrupted the status quo in countless ways. The best part is I can't help but think it's just getting started.</p>
+      <p class="paragraph whyILoveTheWeb_text">In 2017 The web has woven itself into the fabric of the modern world and has almost incalculable cultural, educational, and economic value. It's a place where anyone can publish content, access a global network over a standard protocol and share their content with literally anyone else in the world. It is the ultimate democratizing medium. It has overthrown dictatorships and disrupted the status quo in countless ways. The best part is I can't help but think it's just getting started.</p>
     </div>
   </section>
 
   <section class="contact">
     <div class="container-header">
-      <h2 class="headline content_headline">Contact</h2>
+      <h2 class="headline content_headline" id="contact">Contact</h2>
       <ul class="contact_ul">
         <li class="contact_li"><a href=""><img src="" alt="email" /></a></li>
         <li class="contact_li"><a href=""><img src="" alt="resume" /></a></li>

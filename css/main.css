@@ -432,8 +432,8 @@ MEDIA QUERIES
 
   .hero_nameA {
     display: block;
-    height: 51px;
-    line-height: 51px;
+    /*height: 51px;
+    line-height: 51px;*/
   }
 
   .hero_nav {
@@ -470,11 +470,17 @@ MEDIA QUERIES
 
   .hero_navA {
     display: block;
-    height: 51px;
-    line-height: 48px;
+    /*height: 42px;
+    line-height: 42px;*/
     padding: 0 25px;
     color: inherit;
     text-decoration: none;
+  }
+
+  .hero_navA,
+  .hero_nameA {
+    height: 42px;
+    line-height: 42px;
   }
 
   .hero_header {

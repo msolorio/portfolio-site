@@ -32,6 +32,12 @@ body {
   letter-spacing: 0.09em;
 }
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .blockquote {
   margin: 0;
 }
@@ -85,12 +91,12 @@ THEME LEVEL
   padding: 0;
   margin: 0;
   font-size: 18px;
-  text-shadow: .5px 1px 1px rgba(0, 0, 0, 0.28);
+  /*text-shadow: .5px 1px 1px rgba(0, 0, 0, 0.28);*/
 }
 
 .section {
   display: block;
-  padding: 30px 0;
+  padding: 40px 0;
 }
 
 .section-headline {
@@ -99,7 +105,7 @@ THEME LEVEL
 }
 
 .headline {
-  padding: 0 0 20px;
+  padding: 0 0 30px;
   margin: 0;
   text-shadow: 1.5px 3px 0px rgba(0, 0, 0, 0.18);
   font-family: 'UbuntuRegular', arial, sans-serif;
@@ -210,7 +216,7 @@ HERO
 EXPERIENCE
 /************************************************************/
 .experience_company {
-  padding: 30px 0 20px;
+  padding: 30px 0 82px;
   border-top: 2px solid #ccc;
 }
 
@@ -234,11 +240,45 @@ TESTIMONIAL
 /******************************************************************
 PROJECTS
 /*****************************************************************/
-.section-projectsHeadline {
-  /*color: #232328;*/
-  /*background: url('../images/bg-proj.svg');*/
-  /*background: url('../images/circuit-board.svg');*/
-  
+.projects_row {
+  padding: 0 0 30px;
+}
+
+.projects_techsUsed {
+  padding: 20px 0 0;
+  margin: 0;
+  list-style-type: none;
+  /*font-family: 'OpenSansLight';*/
+  font-family: 'UbuntuRegular', arial, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  /*text-shadow: 0.5px 1px 1px rgba(0, 0, 0, 0.28);*/
+}
+
+.projects_technology {
+  display: inline-block;
+}
+
+.projects_imageContainer {
+  margin: 0 auto;
+  position: relative;
+}
+
+.projects_image {
+  display: block;
+  margin: 0 auto;
+}
+
+.projects_imageContainer,
+.projects_image {
+  width: 277px;
+}
+
+.projects_imageScreen {
+  position: absolute;
+  top: 64px;
+  left: 44px;
+  width: 198px;
 }
 
 /******************************************************************
@@ -266,7 +306,7 @@ WORK EXAMPLES
   font-family: 'UbuntuRegular', arial, sans-serif;
   font-weight: 400;
   font-size: 18px;
-  text-shadow: 0.5px 1px 1px rgba(0, 0, 0, 0.28);
+  /*text-shadow: 0.5px 1px 1px rgba(0, 0, 0, 0.28);*/
 }
 
 .workExamples_technology {
@@ -282,23 +322,15 @@ CONTACT
 
 .contact_headline {
   padding: 0 0 20px;
-  /*text-align: center;*/
-  /*font-size: 32px;*/
-  /*color: rgb(250, 250, 250);*/
 }
 
 .contact_bodyCopy {
-  padding: 0 0 20px;
-}
-
-.contact_elements {
-  height: 53px;
+  padding: 0 0 10px;
 }
 
 .contact_element {
   display: inline-block;
-  padding: 0 6px;
-  height: 100%;
+  padding: 8px 6px;
 }
 
 .contact_link {
@@ -457,7 +489,7 @@ MEDIA QUERIES
   }
 
   .hero_bio {
-    padding: 12px 21px 20px;
+    padding: 8px 17px 16px;
     margin: 144px auto 0;
     max-width: 1024px;
     font-size: 22px;
@@ -465,6 +497,22 @@ MEDIA QUERIES
     background: rgba(17, 17, 17, 0.7);
     border: 1px solid rgba(0, 0, 0, 0.08);
     text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.82), 0px 0px 35px rgba(0, 0, 0, 0.42);
+  }
+
+  /*************************************************************
+  PROJECTS
+  /*************************************************************/
+  
+  .projects_imageContainer,
+  .projects_image {
+    width: 400px;
+  }
+
+  .projects_imageScreen {
+    position: absolute;
+    top: 93px;
+    left: 63px;
+    width: 285px;
   }
 }
 
@@ -488,6 +536,37 @@ MEDIA QUERIES
     width: 75%;
   }
 
+  /******************************************************************
+  PROJECTS
+  /******************************************************************/
+  .col-projectHeadline {
+    width: 25%;
+  }
+  
+  .col-projectDescription {
+    width: 75%;
+  }
+
+  .projects_row {
+    padding: 0 0 45px;
+  }
+
+  .projects_imageContainer {
+    padding-bottom: 50px;
+  }
+  
+  .projects_imageContainer,
+  .projects_image {
+    width: 506px;
+  }
+
+  .projects_imageScreen {
+    position: absolute;
+    top: 117px;
+    left: 79px;
+    width: 361px;
+  }
+
   /*******************************************************
   WORK EXAMPLES
   /*******************************************************/
@@ -500,7 +579,6 @@ MEDIA QUERIES
   }
 
   .workExamples_techsUsed {
-    font-size: 20px;
     text-align: left;
   }
 }
@@ -512,7 +590,7 @@ MEDIA QUERIES
   }
 
   .paragraph {
-    font-size: 22px;
+    /*font-size: 20px;*/
   }
 
   .hero {
@@ -522,7 +600,7 @@ MEDIA QUERIES
 
   .hero_bio {
     margin: 37vh auto 0;
-    font-size: 28px;
+    /*font-size: 26px;*/
   }
 
   /****************************************************

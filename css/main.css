@@ -103,7 +103,7 @@ THEME LEVEL
 .button {
   display: inline-block;
   padding: 11px 21px;
-  margin: 0 0 10px;
+  margin: 0 0 20px;
   cursor: pointer;
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.4);
   background: #ff5c0a;
@@ -265,6 +265,50 @@ HERO
 /************************************************************
 EXPERIENCE
 /************************************************************/
+.experience_headline {
+  float: left;
+}
+
+.experience_resume {
+  float: right;
+  color: #6b6b6b;
+  font-family: 'UbuntuRegular', arial;
+}
+
+.experience_resumeLink {
+  display: block;
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+  height: 100%;
+}
+
+.experience_resumeLink:hover {
+  color: rgb(255, 134, 83);
+}
+
+.experience_resumeIcon {
+  position: relative;
+  top: 5px;
+  height: 22px;
+}
+
+.experience_hoverIcon {
+  position: absolute;
+  left: 0;
+  opacity: 0;
+}
+
+.experience_resumeLink,
+.experience_hoverIcon {
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+
+.experience_resumeLink:hover .experience_hoverIcon {
+  opacity: 1;
+}
+
 .experience_company {
   padding: 20px 0 15px;
   border-top: 2px solid #ccc;
@@ -283,6 +327,7 @@ EXPERIENCE
 .experience_date {
   margin: 0;
   font-size: 14px;
+  font-style: italic;
 }
 
 /********************************************************************
@@ -323,6 +368,7 @@ TESTIMONIAL
   font-size: 38px;
   line-height: 25px;
   margin-right: 17px;
+  color: #adadad;
 }
 
 .testimonials_backShape {
@@ -432,13 +478,16 @@ CONTACT
 }
 
 .contact_elements {
-  margin: 0 -6px;
+  margin: 0 -12px;
 }
 
 .contact_element {
   display: inline-block;
   padding: 8px 12px;
-  margin: 0 -5px;
+}
+
+.contact_email {
+  /*display: block;*/
 }
 
 .contact_link {
@@ -472,12 +521,9 @@ CONTACT
   opacity: 1;
 }
 
-.contact_link:hover .contact_hoverIcon {
-  opacity: 1;
-}
-
 .contact_emailIcon {
   height: 25px;
+  top: 7px;
 }
 
 .contact_gitHubIcon {

@@ -18,10 +18,21 @@
           <h1 class="hero_name"><a class="hero_nameA" href="#home">Michael Solorio</a></h1>
           
           <ul class="hero_nav">
-            <li class="hero_navLi"><a class="hero_navA" href="#experience">Experience</a></li>
-            <li class="hero_navLi"><a class="hero_navA" href="#work">Work</a></li>
-            <li class="hero_navLi"><a class="hero_navA" href="#contact">Contact</a></li>
-            <li class="hero_navLi"><a class="hero_navA" href="#resume">Resume</a></li>
+            <li class="hero_navLi">
+              <a class="hero_navA" href="#experience">Experience</a>
+            </li>
+            <li class="hero_navLi">
+              <a class="hero_navA" href="#work">Work</a>
+            </li>
+            <li class="hero_navLi">
+              <a class="hero_navA" href="#contact">Contact</a>
+            </li>
+            <li class="hero_navLi">
+              <a
+                class="hero_navA"
+                href="./docs/Michael_Solorio_Resume.pdf"
+                target="_blank">Resume</a>
+            </li>
           </ul>
         </div>
       </header>
@@ -34,7 +45,26 @@
 
   <section class="section experience" id="experience">
     <div class="container">
-      <h2 class="headline experience_headline">Experience</h2>
+
+      <div class="experience_headlineContainer clearfix">
+        <h2 class="headline experience_headline">Experience</h2>
+        <div class="experience_resume">
+          <a
+            class="experience_resumeLink"
+            href="./docs/Michael_Solorio_Resume.pdf"
+            target="_blank">
+            <img
+              class="experience_resumeIcon"
+              src="./images/resume-dark.svg"
+              alt="resume" />
+            <img
+              class="experience_resumeIcon experience_hoverIcon"
+              src="./images/resume-hover.svg"
+              alt="resume" />
+            &nbsp;Resume
+          </a>
+        </div>
+      </div>
 
       <div class="row experience_company">
         <div class="col col-experienceCompanyName">
@@ -76,7 +106,6 @@
     </div>
   </section>
 
-  <!--trophy / medal icon-->
   <section class="section testimonials clearfix">
     <div class="container">
       <h2 class="headline testimonials_headline">Testimonials</h2>
@@ -128,7 +157,7 @@
     </div>
   </seciton>-->
 
-  <section class="section projects myKindaTown">
+  <section class="section projects myKindaTown" id="work">
     <div class="container">
       <h2 class="headline">Projects</h2>
       <div class="row projects_row">
@@ -274,34 +303,69 @@
 
       <div class="contact_elements clearfix">
 
-        <div class="contact_element">
-          <a class="contact_link" href="">
-            <img class="contact_icon contact_emailIcon" src="./images/email.svg" alt="email" />
-            <img class="contact_icon contact_hoverIcon contact_emailIcon" src="./images/email-hover.svg" alt="email" />
-            &nbsp;Email
+        <div class="contact_element contact_email">
+          <a
+            class="contact_link"
+            href="mailto:msolorio.wd@gmail.com">
+            <img
+              class="contact_icon contact_emailIcon"
+              src="./images/email.svg"
+              alt="email" />
+            <img
+              class="contact_icon contact_hoverIcon contact_emailIcon" 
+              src="./images/email-hover.svg"
+              alt="email" />
+            &nbsp;Email: msolorio.wd@gmail.com
           </a>
         </div>
 
         <div class="contact_element">
-          <a class="contact_link" href="">
-            <img class="contact_icon" src="./images/resume.svg" alt="resume" />
-            <img class="contact_icon contact_hoverIcon" src="./images/resume-hover.svg" alt="resume" />
+          <a
+            class="contact_link"
+            href="./docs/Michael_Solorio_Resume.pdf"
+            target="_blank">
+            <img
+              class="contact_icon"
+              src="./images/resume.svg"
+              alt="resume" />
+            <img
+              class="contact_icon contact_hoverIcon"
+              src="./images/resume-hover.svg"
+              alt="resume" />
             &nbsp;Resume
           </a>
         </div>
 
         <div class="contact_element">
-          <a class="contact_link" href="">
-            <img class="contact_icon" src="./images/linkedin-logo.svg" alt="linked" />
-            <img class="contact_icon contact_hoverIcon" src="./images/linkedin-logo-hover.svg" alt="linked" />
+          <a
+            class="contact_link"
+            href="https://www.linkedin.com/in/michaelsolorio/"
+            target="_blank">
+            <img
+              class="contact_icon"
+              src="./images/linkedin-logo.svg"
+              alt="linked" />
+            <img
+              class="contact_icon contact_hoverIcon"
+              src="./images/linkedin-logo-hover.svg"
+              alt="linked" />
             &nbsp;LinkedIn
           </a>
         </div>
 
         <div class="contact_element">
-          <a class="contact_link" href="">
-            <img class="contact_icon contact_gitHubIcon" src="./images/github-logo.svg" alt="gitHub" />
-            <img class="contact_icon contact_hoverIcon contact_gitHubIcon" src="./images/github-logo-hover.svg" alt="gitHub" />
+          <a
+            class="contact_link"
+            href="https://github.com/msolorio"
+            target="_blank">
+            <img
+              class="contact_icon contact_gitHubIcon"
+              src="./images/github-logo.svg"
+              alt="gitHub" />
+            <img
+              class="contact_icon contact_hoverIcon contact_gitHubIcon" 
+              src="./images/github-logo-hover.svg"
+              alt="gitHub" />
             &nbsp;GitHub
           </a>
         </div>
@@ -315,10 +379,10 @@
       <p class="copyright">&copy; Michael Solorio</p>
 
       <ul class="footer_nav">
-        <li class="footer_navLi"><a class="footer_navA" href="#about">About</a></li>
-        <li class="footer_navLi"><a class="footer_navA" href="">Experience</a></li>
-        <li class="footer_navLi"><a class="footer_navA" href="">Projects</a></li>
-        <li class="footer_navLi"><a class="footer_navA" href="">Contact</a></li>
+        <li class="footer_navLi"><a class="footer_navA" href="#home">About</a></li>
+        <li class="footer_navLi"><a class="footer_navA" href="#experience">Experience</a></li>
+        <li class="footer_navLi"><a class="footer_navA" href="#work">Work</a></li>
+        <!--<li class="footer_navLi"><a class="footer_navA" href="#contact">Contact</a></li>-->
       </ul>
     </div>
   </footer>

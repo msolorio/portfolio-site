@@ -25,8 +25,6 @@ body {
   margin: 0;
   min-width: 320px;
   font-family: 'OpenSansLight', arial, sans-serif;
-  /*font-family: 'OpenSansRegular', arial, sans-serif;*/
-  /*font-family: 'Ubuntu', sans-serif;*/
   font-weight: 300;
 
   letter-spacing: 0.09em;
@@ -48,7 +46,6 @@ body {
 }
 
 .row {
-  /*font-size: 0;*/
   margin-right: -10px;
   margin-left: -10px;
 }
@@ -60,7 +57,6 @@ body {
 }
 
 .col {
-  /*display: inline-block;*/
   float: left;
   width: 100%;
   padding-right: 10px;
@@ -133,25 +129,23 @@ THEME LEVEL
   padding: 0 0 20px;
   margin: 0;
   font-size: 18px;
-  /*text-shadow: .5px 1px 1px rgba(0, 0, 0, 0.28);*/
+  letter-spacing: 0.08em;
+  line-height: 1.5em;
 }
 
 .section {
   display: block;
-  padding: 40px 0;
+  padding: 20px 0;
 }
 
 .section-headline {
   padding: 16px 0;
   margin: 0;
-  /*background: url(../images/carbon_fibre.png);*/
-  /*border-top: 2px solid #000;
-  border-bottom: 1px solid #000;*/
   background: #36363a;
 }
 
 .headline {
-  padding: 0 0 30px;
+  padding: 0 0 20px;
   margin: 0;
   text-shadow: 1.5px 3px 0px rgba(0, 0, 0, 0.18);
   font-family: 'UbuntuRegular', arial, sans-serif;
@@ -163,13 +157,11 @@ THEME LEVEL
   padding: 5px 0;
   text-align: center;
   font-size: 24px;
-  /*color: #232328;*/
   color: #fff;
-  /*text-shadow: 4px 4px 4px #000;*/
 }
 
 .headline-sub {
-  padding: 0 0 10px;
+  padding: 0 0 6px;
   margin: 0;
   text-shadow: 1.5px 3px 0px rgba(0, 0, 0, 0.18);
   font-family: 'UbuntuRegular', arial, sans-serif;
@@ -183,27 +175,29 @@ THEME LEVEL
 .currentlyWorkingOn,
 .whyILoveWeb {
   background: rgb(250, 250, 250);
+  /*background: linear-gradient(#ffffff, #dedede);*/
   color: #232328;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
 }
 
 .testimonials,
 .workExamples {
   background: #e2e2e6;
+  background: linear-gradient(#cacace, #c8c8d0);
   color: #232328;
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #b3b3b3;
+  border-bottom: 1px solid #b3b3b3;
 }
 
-/*.testimonials {
-  background: url(../images/carbon_fibre.png);
-}*/
+.experience_company,
+.projects_row,
+.workExamples_example {
+  padding: 20px 0 15px;
+}
 
 .contact,
 .currentlyWorkingOn {
   background: #36363a;
-  /*background: url(../images/carbon_fibre.png);*/
+  background: linear-gradient(#45454a, #36363a);
   color: rgb(250, 250, 250);
 }
 
@@ -247,9 +241,6 @@ HERO
   padding: 10px 0 20px;
   font-size: 19px;
   font-family: 'OpenSansLight';
-  /*font-family: 'Ubuntu', sans-serif;*/
-  /* must restate letter spacing here
-  now that font-family must be redeclared */
   letter-spacing: 0.09em;
 }
 
@@ -275,7 +266,7 @@ HERO
 EXPERIENCE
 /************************************************************/
 .experience_company {
-  padding: 30px 0 15px;
+  padding: 20px 0 15px;
   border-top: 2px solid #ccc;
 }
 
@@ -285,15 +276,13 @@ EXPERIENCE
 
 .experience_position {
   margin: 0;
-  /*font-family: 'UbuntuRegular', arial, sans-serif;*/
   font-size: 18px;
   padding: 0 0 5px;
 }
 
 .experience_date {
   margin: 0;
-  /*font-family: 'UbuntuRegular', arial, sans-serif;*/
-  font-size: 18px;
+  font-size: 14px;
 }
 
 /********************************************************************
@@ -315,12 +304,37 @@ TESTIMONIAL
   display: none;
 }
 
+.testimonials_quote {
+  position: relative;
+  z-index: 1;
+  padding: 15px 20px;
+  background: #fff;
+  color: #232328;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.42);
+}
+
+.teetoTestimonails_blockquote {
+  padding: 0 0 5px;
+}
+
+.testimonials_openQuoteMarks {
+  position: relative;
+  top: 2px;
+  font-size: 38px;
+  line-height: 25px;
+  margin-right: 17px;
+}
+
+.testimonials_backShape {
+  padding: 0 0 20px;
+}
+
 /******************************************************************
 PROJECTS
 /*****************************************************************/
 .projects_row {
   padding: 0 0 20px;
-  padding: 30px 0 20px;
+  padding: 20px 0 20px;
   border-top: 2px solid #BBBBBB;
 }
 
@@ -328,11 +342,9 @@ PROJECTS
   padding: 0 0 20px;
   margin: 0;
   list-style-type: none;
-  /*font-family: 'OpenSansLight';*/
   font-family: 'UbuntuRegular', arial, sans-serif;
   font-weight: 400;
   font-size: 18px;
-  /*text-shadow: 0.5px 1px 1px rgba(0, 0, 0, 0.28);*/
 }
 
 .projects_technology {
@@ -361,21 +373,11 @@ PROJECTS
   width: 198px;
 }
 
-.projects_viewCase {
-  /*width: 120px;*/
-}
-
 /******************************************************************
 WORK EXAMPLES
 /*****************************************************************/
 .workExamples_example {
-  padding: 30px 0;
-  border-top: 2px solid #BBBBBB;
-}
-
-.workExamples_firstExample {
-  /*padding: 0 0 30px;*/
-  /*border-top: none;*/
+  border-top: 2px solid #999999;
 }
 
 .workExamples_lastExamples {
@@ -386,11 +388,9 @@ WORK EXAMPLES
   padding: 0px 0 20px;
   margin: 0;
   list-style-type: none;
-  /*font-family: 'OpenSansLight';*/
   font-family: 'UbuntuRegular', arial, sans-serif;
   font-weight: 400;
   font-size: 18px;
-  /*text-shadow: 0.5px 1px 1px rgba(0, 0, 0, 0.28);*/
 }
 
 .workExamples_technology {
@@ -489,6 +489,7 @@ FOOTER
 /****************************************************************/
 .footer {
   background: #232328;
+  border-top: 1px solid #1e1e21;
   color: #fff;
 }
 
@@ -528,9 +529,7 @@ FOOTER
 MEDIA QUERIES
 /******************************************************************/
 @media (min-width: 576px) {
-  .col-contactEl {
-    width: 25%;
-  }
+  /**/
 }
 
 @media (min-width: 768px) {
@@ -542,13 +541,24 @@ MEDIA QUERIES
     font-size: 19px;
   }
 
+  .section {
+    padding: 30px 0;
+  }
+
   .headline {
+    padding: 0 0 30px;
     font-size: 26px;
   }
 
   .headline-featured {
     font-size: 32px;
     padding: 20px 0;
+  }
+
+  .experience_company,
+  .projects_row,
+  .workExamples_example {
+    padding: 30px 0 15px;
   }
 
   /******************************************************************
@@ -579,8 +589,6 @@ MEDIA QUERIES
 
   .hero_nameA {
     display: block;
-    /*height: 51px;
-    line-height: 51px;*/
   }
 
   .hero_nav {
@@ -601,8 +609,6 @@ MEDIA QUERIES
 
   .hero_navA {
     display: block;
-    /*height: 42px;
-    line-height: 42px;*/
     padding: 0 25px;
     color: inherit;
     text-decoration: none;
@@ -639,7 +645,6 @@ MEDIA QUERIES
   /*************************************************************
   PROJECTS
   /*************************************************************/
-  
   .projects_imageContainer,
   .projects_image {
     width: 400px;
@@ -656,6 +661,14 @@ MEDIA QUERIES
 @media (min-width: 992px) {
   .container {
     width: 960px;
+  }
+
+  .section {
+    padding: 40px 0;
+  }
+
+  .headline {
+    padding: 0 0 40px;
   }
 
   .button {
@@ -700,7 +713,6 @@ MEDIA QUERIES
     background: #fff;
     color: #232328;
     box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.42);
-    /*border: 1px solid rgba(0, 0, 0, 0.34);*/
   }
 
   .teetoTestimonails_blockquote {
@@ -716,32 +728,19 @@ MEDIA QUERIES
   }
 
   .testimonials_backShape {
-    /*display: inline-block;*/
-    /*width: 70%;*/
     padding: 15px;
-    /*margin: 0 0 30px;*/
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.65);
     border: 1px solid rgba(0, 0, 0, 0.1);
   }
 
   .testimonials_backShape1 {
-    /*float: left;*/
-    margin-right: 20px;
+    margin-right: 40px;
     background: #ff4f1a;
-    /*background: #686878;*/
-    /*background: -webkit-linear-gradient(#ff4f1a, #ff5d0a);
-    background: -moz-linear-gradient(#ff4f1a, #ff5d0a);
-    background: -o-linear-gradient(#ff4f1a, #ff5d0a);
-    background: linear-gradient(#ff4f1a, #ff5d0a);*/
-    /*margin: 0 84px 76px 0;*/
   }
 
   .testimonials_backShape2 {
-    /*float: right;*/
-    /*background: #ffab0f;*/
-    margin-left: 20px;
+    margin-left: 40px;
     background: #686878;
-    /*background: #ff4f1a;*/
   }
 
   .testimonials_iconContainer {
@@ -749,15 +748,9 @@ MEDIA QUERIES
     width: 215px;
     height: 215px;
     background: #fff;
-    /*padding: 29px;*/
-    vertical-align: top;
     border-radius: 142px;
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.65);
     margin-top: 72px;
-  }
-
-  .testimonials_iconContainer2 {
-    /*margin-right: 84px;*/
   }
 
   .testimonials_icon {
@@ -778,10 +771,6 @@ MEDIA QUERIES
   
   .col-projectDescription {
     width: 75%;
-  }
-
-  .projects_row {
-    /*padding: 0 0 45px;*/
   }
 
   .projects_imageContainer {
@@ -826,12 +815,7 @@ MEDIA QUERIES
 
 @media (min-width: 1200px) {
   .container {
-    /*width: 1140px;*/
     width: 1024px;
-  }
-
-  .paragraph {
-    /*font-size: 20px;*/
   }
 
   .hero {
@@ -841,9 +825,5 @@ MEDIA QUERIES
 
   .hero_bio {
     margin: 39vh auto 0;
-    /*font-size: 26px;*/
   }
-
-  
-
 }

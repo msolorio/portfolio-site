@@ -176,14 +176,12 @@ THEME LEVEL
 .currentlyWorkingOn,
 .whyILoveWeb {
   background: rgb(250, 250, 250);
-  /*background: linear-gradient(#ffffff, #dedede);*/
   color: #232328;
 }
 
 .testimonials,
 .workExamples {
-  background: #e2e2e6;
-  background: linear-gradient(#cacace, #c8c8d0);
+  background: #dddddf;
   color: #232328;
   border-top: 1px solid #b3b3b3;
   border-bottom: 1px solid #b3b3b3;
@@ -301,13 +299,18 @@ EXPERIENCE
 }
 
 .experience_resumeLink,
-.experience_hoverIcon {
+.experience_hoverIcon,
+.experience_originalIcon {
   -webkit-transition: all 150ms ease-in-out;
   transition: all 150ms ease-in-out;
 }
 
 .experience_resumeLink:hover .experience_hoverIcon {
   opacity: 1;
+}
+
+.experience_resumeLink:hover .experience_originalIcon {
+  opacity: 0;
 }
 
 .experience_company {
@@ -503,6 +506,8 @@ CONTACT
   position: relative;
   top: 5px;
   height: 22px;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
 }
 
 .contact_hoverIcon {
@@ -520,6 +525,10 @@ CONTACT
 
 .contact_link:hover .contact_hoverIcon {
   opacity: 1;
+}
+
+.contact_link:hover .contact_originalIcon {
+  opacity: 0;
 }
 
 .contact_emailIcon {
@@ -802,7 +811,19 @@ MEDIA QUERIES
     background: #fff;
     border-radius: 142px;
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.65);
+    /*margin-top: 72px;*/
+  }
+
+  .testimonials_iconContainer1 {
     margin-top: 72px;
+  }
+
+  .testimonials_iconContainer2 {
+    margin-top: 84px;
+  }
+
+  .testimonials_iconContainer3 {
+    margin-top: 8px;
   }
 
   .testimonials_icon {

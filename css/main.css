@@ -172,15 +172,15 @@ THEME LEVEL
 }
 
 .experience,
-.myKindaTown,
+.workExamples,
 .currentlyWorkingOn,
 .whyILoveWeb {
   background: rgb(250, 250, 250);
   color: #232328;
 }
 
-.testimonials,
-.workExamples {
+.myKindaTown,
+.testimonials {
   background: #dddddf;
   color: #232328;
   border-top: 1px solid #b3b3b3;
@@ -404,6 +404,7 @@ PROJECTS
 .projects_imageContainer {
   margin: 0 auto;
   position: relative;
+  left: -5px;
 }
 
 .projects_image {
@@ -630,7 +631,6 @@ MEDIA QUERIES
   .hero {
     padding: 0;
     background-image: url('../images/building-pattern-br6.jpg');
-    background-position: 0 -74px;
     height: 560px;
   }
 
@@ -680,8 +680,7 @@ MEDIA QUERIES
   }
 
   .hero_header {
-    background: rgba(0, 0, 0, 0.6);
-    background: rgba(17, 17, 17, 0.5);
+    background: rgba(28, 28, 28, 0.8);
     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
     text-shadow: 1px 2px 1px rgba(0, 0, 0, 1), 0px 0px 35px rgba(0, 0, 0, 0.19);
   }
@@ -691,12 +690,11 @@ MEDIA QUERIES
   }
 
   .hero_bio {
-    padding: 8px 17px 16px;
+    padding: 15px 24px 22px;
     margin: 144px auto 0;
     max-width: 1024px;
     font-size: 22px;
-    background: rgba(0, 0, 0, 0.8);
-    background: rgba(17, 17, 17, 0.7);
+    background: rgba(28, 28, 28, 0.87);
     border: 1px solid rgba(0, 0, 0, 0.08);
     text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.82), 0px 0px 35px rgba(0, 0, 0, 0.42);
   }
@@ -818,11 +816,11 @@ MEDIA QUERIES
   }
 
   .testimonials_iconContainer1 {
-    margin-top: 72px;
+    margin-top: 95px;
   }
 
   .testimonials_iconContainer2 {
-    margin-top: 84px;
+    margin-top: 7px;
   }
 
   .testimonials_iconContainer3 {

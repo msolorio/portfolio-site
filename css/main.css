@@ -4,16 +4,9 @@
 }
 
 @font-face {
-  font-family: 'OpenSansRegular';
-  src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
-}
-
-@font-face {
   font-family: 'UbuntuRegular';
   src: url('../fonts/Ubuntu-Regular.ttf') format('truetype');
 }
-
-
 
 *,
 *:before,
@@ -684,7 +677,7 @@ MEDIA QUERIES
 
   .hero {
     padding: 0;
-    background-image: url('../images/building-pattern-br6.jpg');
+    background-image: url('../images/building-pattern-br7.jpg');
     height: 560px;
   }
 
@@ -734,7 +727,7 @@ MEDIA QUERIES
   }
 
   .hero_header {
-    background: rgba(28, 28, 28, 0.8);
+    background: rgba(28, 28, 28, 0.83);
     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
     text-shadow: 1px 2px 1px rgba(0, 0, 0, 1), 0px 0px 35px rgba(0, 0, 0, 0.19);
   }
@@ -748,7 +741,7 @@ MEDIA QUERIES
     margin: 144px auto 0;
     max-width: 1024px;
     font-size: 22px;
-    background: rgba(28, 28, 28, 0.87);
+    background: rgba(28, 28, 28, 0.89);
     border: 1px solid rgba(0, 0, 0, 0.08);
     text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.82), 0px 0px 35px rgba(0, 0, 0, 0.42);
   }

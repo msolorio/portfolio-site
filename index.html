@@ -13,7 +13,7 @@
 
   <section class="hero" id="home">
     <div class="hero_opaqueOnMobile">
-      <header class="hero_header clearfix">
+      <header class="hero_header clearfix js-hero_header">
         <div class="container-header">
           <h1 class="hero_name"><a class="hero_nameA" href="#home">Michael Solorio</a></h1>
           
@@ -30,6 +30,30 @@
             <li class="hero_navLi">
               <a
                 class="hero_navA"
+                href="./docs/Michael_Solorio_Resume.pdf"
+                target="_blank">Resume</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+
+      <header class="hero_header-fixed js-hero_header-fixed clearfix">
+        <div class="container-header-fixed clearfix">
+          <h1 class="hero_name-fixed"><a class="hero_nameA" href="#home">Michael Solorio</a></h1>
+          
+          <ul class="hero_nav-fixed">
+            <li class="hero_navLi-fixed">
+              <a class="hero_navA-fixed" href="#work">Work</a>
+            </li>
+            <li class="hero_navLi-fixed">
+              <a class="hero_navA-fixed" href="#experience">Experience</a>
+            </li>
+            <li class="hero_navLi-fixed">
+              <a class="hero_navA-fixed" href="#contact">Contact</a>
+            </li>
+            <li class="hero_navLi-fixed">
+              <a
+                class="hero_navA-fixed"
                 href="./docs/Michael_Solorio_Resume.pdf"
                 target="_blank">Resume</a>
             </li>
@@ -304,7 +328,7 @@
     <div class="container">
       <h2 class="headline whyILoveWeb_headline">Why I Love the Web</h2>
 
-      <p class="paragraph whyILoveTheWeb_text">In <span id="currentYear">2017</span> The web has woven itself into the fabric of the modern world and has almost incalculable cultural, educational, and economic value. It's a place where anyone can publish content, access a global network over a standard protocol and share their content with literally anyone else in the world. It is the ultimate democratizing medium. It has overthrown dictatorships and disrupted the status quo in countless ways.</p>
+      <p class="paragraph whyILoveTheWeb_text">In <span class="js-currentYear">2018</span> The web has woven itself into the fabric of the modern world and has almost incalculable cultural, educational, and economic value. It's a place where anyone can publish content, access a global network over a standard protocol and share their content with literally anyone else in the world. It is the ultimate democratizing medium. It has overthrown dictatorships and disrupted the status quo in countless ways.</p>
 
       <p class="paragraph whyILoveTheWeb_text">The best part is I can't help but think it's just getting started.</p>
     </div>
@@ -402,9 +426,7 @@
     </div>
   </footer>
 
-  <script type="text/javascript">
-    var currentYear = new Date().getFullYear();
-    document.getElementById('currentYear').innerHTML = currentYear;
-  </script>
+  <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

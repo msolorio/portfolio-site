@@ -78,6 +78,7 @@ THEME LEVEL
 
 .hero_nameA,
 .hero_navLi,
+.hero_navLi-fixed,
 .contact_link,
 .footer_navA {
   cursor: pointer;
@@ -88,6 +89,7 @@ THEME LEVEL
 /* hover link styles */
 .hero_nameA:hover,
 .hero_navLi:hover,
+.hero_navLi-fixed:hover,
 .footer_navA:hover {
   color: rgb(255, 134, 83);
   text-shadow: 1px 2px 1px rgba(0, 0, 0, .6), 0px 0px 35px rgba(0, 0, 0, 0.1);
@@ -218,7 +220,7 @@ HERO
 /************************************************/
 .hero {
   background: #232328;
-  background-image: url('../images/building-pattern-br6.jpg');
+  background-image: url('../images/building-pattern-br7.jpg');
   background-size: cover;
   color: #fff;
 }
@@ -236,7 +238,9 @@ HERO
 
 .hero_name {
   margin: 0;
-  padding: 10px 0 20px;
+  /*padding: 10px 0 20px;*/
+  padding: 0 0 8px;
+  float: left;
   font-size: 19px;
   font-family: 'OpenSansLight';
   letter-spacing: 0.09em;
@@ -258,6 +262,53 @@ HERO
 .hero_bio {
   margin: 0 auto;
   font-size: 19px;
+}
+
+/*******************************************/
+.container-header-fixed {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1500px;
+}
+
+.hero_header-fixed {
+  display: none;
+  position: fixed;
+  top: -1px;
+  width: 100%;
+  z-index: 1;
+
+  background: rgba(28, 28, 28, 0.83);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  text-shadow: 1px 2px 1px rgba(0, 0, 0, 1), 0px 0px 35px rgba(0, 0, 0, 0.19);
+}
+
+.hero_nav-fixed {
+  display: block;
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+  text-align: center;
+  list-style-type: none;
+}
+
+.hero_navLi-fixed {
+  font-size: 14px;
+  display: inline-block;
+}
+
+
+.hero_navA-fixed {
+  display: block;
+  padding: 0 7px;
+  color: inherit;
+  text-decoration: none;
+  height: 42px;
+  line-height: 42px;
+}
+
+.hero_name-fixed {
+  display: none;
 }
 
 /************************************************************
@@ -353,8 +404,8 @@ TESTIMONIAL
 }
 
 .testimonials_quote {
-  position: relative;
-  z-index: 1;
+  /*position: relative;
+  z-index: 1;*/
   padding: 15px 20px;
   background: #fff;
   color: #232328;
@@ -484,6 +535,7 @@ CURRENTLY WORKING ON
 .currentlyWorkingOn_gitHubLink {
   display: block;
   position: relative;
+  padding: 0 0 20px;
   color: inherit;
   text-decoration: none;
   height: 100%;
@@ -693,6 +745,10 @@ MEDIA QUERIES
     font-size: 23px;
   }
 
+  .hero_name-fixed {
+    display: block;
+  }
+
   .hero_nameA {
     display: block;
   }
@@ -730,6 +786,26 @@ MEDIA QUERIES
     background: rgba(28, 28, 28, 0.83);
     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
     text-shadow: 1px 2px 1px rgba(0, 0, 0, 1), 0px 0px 35px rgba(0, 0, 0, 0.19);
+  }
+
+  .container-header-fixed {
+    padding: 0 25px;
+  }
+
+  .hero_nav-fixed {
+    float: right;
+  }
+
+  .hero_navA-fixed {
+    padding: 0 25px;
+  }
+
+  .hero_name-fixed {
+    display: block;
+    margin: 0;
+    padding: 0;
+    float: left;
+    font-size: 24px;
   }
 
   .container-bio {
@@ -816,8 +892,8 @@ MEDIA QUERIES
   }
 
   .testimonials_quote {
-    position: relative;
-    z-index: 1;
+    /*position: relative;*/
+    /*z-index: 1;*/
     padding: 15px 20px;
     background: #fff;
     color: #232328;

@@ -22,7 +22,7 @@ $.fn.hasScrolledUpTo = function() {
 function setFixedHeader() {
   $(window).on('scroll', function() {
     if ($('.workExamples').hasScrolledUpTo() && !($('.footer').hasScrolledUpTo())) {
-      $('.js-hero_header-fixed').fadeIn(2500);
+      $('.js-hero_header-fixed').fadeIn(400);
     } else {
       $('.js-hero_header-fixed').fadeOut(400);
     }

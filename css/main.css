@@ -167,22 +167,23 @@ THEME LEVEL
 }
 
 .myKindaTown,
-.experience,
-.whyILoveWeb {
+.experience {
   background: rgb(250, 250, 250);
   color: #232328;
 }
 
-.workExamples {
+.testimonials,
+.whyILoveWeb {
   background: #dddddf;
   background: #dddddf;
   color: #232328;
   border-top: 1px solid #b3b3b3;
+  border-bottom: 1px solid #b3b3b3;
 }
 
-.testimonials {
+.unusedBackgroundStyle {
   background: #b5b5b9;
-  background: linear-gradient(#f7f7f8, #dddddf);
+  background: linear-gradient(#f9f9fa, #dddddf);
   color: #232328;
   border-top: 1px solid #b3b3b3;
   border-bottom: 1px solid #b3b3b3;
@@ -365,7 +366,7 @@ EXPERIENCE
 
 .experience_company {
   padding: 20px 0 15px;
-  border-top: 2px solid #ccc;
+  border-top: 2px solid #cccccc;
 }
 
 .col-experienceCompanyName {
@@ -816,7 +817,7 @@ MEDIA QUERIES
   .hero_bio {
     padding: 15px 24px 22px;
     margin: 144px auto 0;
-    max-width: 1024px;
+    max-width: 964px;
     font-size: 22px;
     background: rgba(28, 28, 28, 0.89);
     border: 1px solid rgba(0, 0, 0, 0.08);

@@ -894,8 +894,6 @@ MEDIA QUERIES
   }
 
   .testimonials_quote {
-    /*position: relative;*/
-    /*z-index: 1;*/
     padding: 15px 20px;
     background: #fff;
     color: #232328;
@@ -962,6 +960,25 @@ MEDIA QUERIES
     height: 146px;
     display: block;
     margin: 0 auto;
+  }
+
+  .testimonials_icon1 {
+    padding: 0 5px;
+    left: 7px;
+  }
+
+  .testimonials_icon2 {
+    padding: 0 12px;
+    left: -10px;
+  }
+
+  .testimonials_icon3 {
+    padding: 0 10px;
+  }
+
+  .testimonials_icon4 {
+    padding: 0 15px;
+    top: 32px;
   }
 
   /******************************************************************

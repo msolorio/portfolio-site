@@ -33,6 +33,9 @@ body {
   margin: 0;
 }
 
+/***********************************************
+GRID
+/***********************************************/
 .container {
   margin: 0 auto;
   padding: 0 20px;
@@ -817,7 +820,7 @@ MEDIA QUERIES
   .hero_bio {
     padding: 15px 24px 22px;
     margin: 144px auto 0;
-    max-width: 928px;
+    max-width: 986px;
     font-size: 22px;
     background: rgba(28, 28, 28, 0.89);
     border: 1px solid rgba(0, 0, 0, 0.08);

@@ -1,0 +1,22 @@
+{
+  "name": "portfolio-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msolorio/portfolio-site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/msolorio/portfolio-site/issues"
+  },
+  "homepage": "https://github.com/msolorio/portfolio-site#readme"
+}
